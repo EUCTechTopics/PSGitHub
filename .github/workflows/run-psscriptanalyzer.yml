@@ -1,4 +1,4 @@
-name: PSScriptAnalyzer Validation
+name: PSScriptAnalyzer
 
 on:
   pull_request:
