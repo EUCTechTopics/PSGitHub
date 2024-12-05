@@ -11,7 +11,7 @@ on:
       - main
 
 jobs:
-  validate-branch:
+  run-branch-validation:
     runs-on: ubuntu-latest
     steps:
       - name: Check Source Branch
