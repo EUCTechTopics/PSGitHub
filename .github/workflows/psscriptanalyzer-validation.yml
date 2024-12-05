@@ -1,18 +1,16 @@
 name: PSScriptAnalyzer Validation
+
 on:
-  pull_request_target:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - edited
+  pull_request:
+
 jobs:
   run-psscriptanalyzer:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Analyze PowerShell Scripts with PSScriptAnalyzer
+
+      - name: Run PSScriptAnalyzer on PowerShell Scripts
         shell: pwsh
         run: |
           Invoke-ScriptAnalyzer -Path ./PSIdentityNow/ -Recurse -EnableExit
