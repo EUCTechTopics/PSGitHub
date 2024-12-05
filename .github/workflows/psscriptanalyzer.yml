@@ -1,4 +1,4 @@
-name: Run PSPSScriptAnalyzer on PowerShell Scripts
+name: Run PSScriptAnalyzer
 on:
   pull_request_target:
     types:
