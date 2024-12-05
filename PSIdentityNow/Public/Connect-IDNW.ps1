@@ -23,7 +23,7 @@
 
 function Connect-IDNW {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseDeclaredVarsMoreThanAssignments","")]
-    [CmdletBinding(
+    [CmdletBinding( 
         SupportsShouldProcess = $False,
         ConfirmImpact = "None",
         SupportsPaging = $False,
@@ -48,8 +48,8 @@ function Connect-IDNW {
         }
          { "prd", "acc" -contains $_ } {
             $Instance = $_.ToUpper()
-        }
-    }
+        } 
+    } 
 
     $script:IDNWEnv = Get-IDNWEnvironment -Instance $Instance -APIVersion $APIVersion
     Write-Output @"
