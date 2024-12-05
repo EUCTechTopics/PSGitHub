@@ -39,7 +39,7 @@ function Connect-IDNW {
         [Parameter(Mandatory = $false)]
         [ValidateSet("v3", "v2024", "beta")]
         [String]
-        $APIVersion = 'v3'
+        $APIVersion = 'v3' 
     )
 
     switch ($Instance.ToLower()) {

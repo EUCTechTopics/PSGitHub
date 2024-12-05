@@ -17,6 +17,7 @@
 
 function Disconnect-IDNW {
 
+    $var = "hi"
     if (-not $script:IDNWEnv) {
         throw "Not connected to IdentityNow."
     } else {
